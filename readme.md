@@ -1,9 +1,9 @@
-# Php version swith
+# Php version switch
 
 [![Hestabit](https://hestabit-development.s3-us-west-2.amazonaws.com/images/hb.png)](https://www.hestabit.com)
 
 
-# This file will help you to swith the phpversion.
+# This file will help you to switch the phpversion.
 
 ## How to use this file
 
