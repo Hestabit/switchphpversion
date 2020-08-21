@@ -1,6 +1,6 @@
 # Php version swith
 
-[![Hestabit]](https://www.hestabit.com)
+[![Hestabit](https://hestabit-development.s3-us-west-2.amazonaws.com/images/Asset+1.png)](https://www.hestabit.com)
 
 
 # This file will help you to swith the phpversion.
