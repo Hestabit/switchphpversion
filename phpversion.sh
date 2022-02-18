@@ -47,7 +47,7 @@ then
 elif [ "$phpenable" = "7.3" ]
 then 
     sudo apt-get install libapache2-mod-php7.3
-    sudo apt install -y php7.3-common php7.3-mysql php7.3-xml php7.3-xmlrpc php7.3-curl \ 
+    sudo apt install -y php7.3-common php7.3-mysql php7.3-xml php7.3-xmlrpc php7.3-curl \
     php7.3-gd  php7.3-mysql php7.3-imagick php7.3-cli php7.3-dev php7.3-imap php7.3-mbstring \
      php7.3-opcache php7.3-soap php7.3-zip php7.3-intl 
     sudo a2dismod php$phpdisable
@@ -58,12 +58,23 @@ sudo service apache2 restart
 elif [ "$phpenable" = "7.4" ]
 then 
     sudo apt-get install libapache2-mod-php7.4
-    sudo apt install -y php7.4-common php7.4-mysql php7.4-xml php7.4-xmlrpc php7.4-curl \ 
+    sudo apt install -y php7.4-common php7.4-mysql php7.4-xml php7.4-xmlrpc php7.4-curl \
     php7.4-gd  php7.4-mysql php7.4-imagick php7.4-cli php7.4-dev php7.4-imap php7.4-mbstring \
      php7.4-opcache php7.4-soap php7.4-zip php7.4-intl 
     sudo a2dismod php$phpdisable
     sudo a2enmod  php7.4
         sudo update-alternatives --set php /usr/bin/php7.4
+sudo service apache2 restart
+
+elif [ "$phpenable" = "8.0" ]
+then 
+    sudo apt-get install libapache2-mod-php8.0
+    sudo apt install -y php8.0-common php8.0-mysql php8.0-xml php8.0-xmlrpc php8.0-curl \
+    php8.0-gd  php8.0-mysql php8.0-imagick php8.0-cli php8.0-dev php8.0-imap php8.0-mbstring \
+    php8.0-opcache php8.0-soap php8.0-zip php8.0-intl 
+    sudo a2dismod php$phpdisable
+    sudo a2enmod  php8.0
+        sudo update-alternatives --set php /usr/bin/php8.0
 sudo service apache2 restart
 else
   echo "There is something wrong"
